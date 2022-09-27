@@ -1,6 +1,7 @@
 import { extendTheme } from "@chakra-ui/react";
 import "@fontsource/encode-sans-semi-condensed";
 import "@fontsource/galada";
+import InputConfig from "./components/input";
 
 const theme = extendTheme({
   fonts: {
@@ -14,6 +15,7 @@ const theme = extendTheme({
         letterSpacing: "0.04em",
       },
     },
+    Input: InputConfig,
     Text: {
       defaultProps: {
         textStyle: "p",
@@ -47,6 +49,10 @@ const theme = extendTheme({
     brand: {
       primary: "#1f114d",
       secondary: "#1D1D1D",
+    },
+    bg: {
+      main: "#1a202c",
+      secondary: "#6177a3",
     },
   },
   styles: {
